@@ -1,14 +1,15 @@
 repo: "image-grid"
 canvasCourse: "web-dev-1"
 
-naming: true
-restrictFileTypes: true
-liveWebsite: true
-
-git:
-  numCommits: 2
-  allCommitted: true
-  allSynced: true
+inherit:
+  - naming-restrict-live
+  - git-2
+  - css
+  - border-box
+  - body-margin-0
+  - responsive-css
+  - img-block-100
+  - screenshots-all
 
 html:
   - path: "index.html"
@@ -16,38 +17,14 @@ html:
 
 css:
   - path: "css/main.css"
-    valid: true
-    bestPractices: true
     has:
-      - ['html', 'box-sizing', 'border-box']
-      - ['html', 'text-size-adjust', '100%']
-      - ['html', '-moz-text-size-adjust', '100%']
-      - ['html', '-ms-text-size-adjust', '100%']
-      - ['html', '-webkit-text-size-adjust', '100%']
-      - ['*', 'box-sizing', 'inherit']
-      - ['body', 'margin', '0']
-      - ['img', 'display', 'block']
+      - ['@25']
+      - ['@38']
+      - ['@60']
     search:
-      - '@-moz-viewport'
-      - '@-ms-viewport'
-      - '@-o-viewport'
-      - '@-webkit-viewport'
-      - '@viewport'
-      - '@media only screen and \(min-width: 25em\) \{'
-      - '@media only screen and \(min-width: 38em\) \{'
-      - '@media only screen and \(min-width: 60em\) \{'
       - 'float: left'
       - 'display: none'
       - 'img:nth-child\('
       - 'width: 50%'
       - 'width: 33\.3333%'
       - 'width: 66\.6666%'
-    searchNot:
-      - ['@media.+\(.*max-width', 'Media queries with `max-width` should not be used — use `min-width` instead']
-      - ['@media.+\(.*px', 'Pixel units should not be used in media queries — use `em` instead']
-      - ['font-size\s*:\s*.+px', 'Pixel units should not be used for `font-size` — use `rem` instead']
-      - ['line-height\s*:\s*.+(px|rem|em)', 'Line heights should not have units']
-
-screenshots:
-  - path: "index.html"
-    sizes: [320, 400, 650, 980, 1400]
