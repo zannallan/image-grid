@@ -1,5 +1,5 @@
 ---
-summary: 'Use float and media queries to make a grid of images responsive for different screen sizes.'
+summary: 'Use Flexbox and media queries to make a grid of images responsive for different screen sizes.'
 time: '1 hour'
 deliverables: '1 HTML file, 1 CSS file, images'
 ---

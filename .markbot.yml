@@ -22,9 +22,11 @@ css:
       - ['@38']
       - ['@60']
     search:
-      - 'float: left'
+      - 'display: flex'
+      - 'flex-direction: row'
+      - 'flex-wrap:'
       - 'display: none'
-      - 'img:nth-child\('
+      - '.photo:nth-child\('
       - 'width: 50%'
       - 'width: 33\.3333%'
       - 'width: 66\.6666%'
