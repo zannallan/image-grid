@@ -23,7 +23,6 @@ css:
       - ['@60']
     search:
       - 'display: flex'
-      - 'flex-direction: row'
       - 'flex-wrap:'
       - 'display: none'
       - '.photo:nth-child\('
