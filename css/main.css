@@ -68,7 +68,7 @@ section {
 
   .photo {
     display: inline;
-    width: 33.33%;
+    width: 33.3333%;
   }
 
   .photo:first-child {
@@ -88,12 +88,12 @@ section {
 @media only screen and (min-width: 60em) {
 
   .photo {
-    display: inline;
-    width: 33.33%;
+    display: inline-block;
+    width: 33.3333%;
   }
 
   .photo:first-child {
-    width: 66.66%;
+    width: 66.6666%;
   }
 
   .photo:nth-child(2) {
